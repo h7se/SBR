@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--DON T DELETE COMMENTED LINES !!!!!!!!!!!!!!!!!!!!, USED TO MAKE ITEMS SELECTABLE-->
+
+    <!--<item android:state_enabled="true" android:state_pressed="true" android:drawable="@drawable/state_red" />-->
+    <!--<item android:state_enabled="true" android:state_focused="true" android:drawable="@drawable/state_blue" />-->
+    <!--<item android:state_enabled="true" android:state_selected="true" android:drawable="@drawable/state_yellow" />-->
+    <!--<item android:state_activated="true" android:drawable="@drawable/state_green" />-->
+
+    <item android:drawable="@drawable/state_item_status_pass" />
+
+</selector>

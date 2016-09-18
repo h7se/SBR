@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/white_bg"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:id="@+id/textViewTitle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:gravity="center"
+            android:background="@drawable/fragment_bg2"
+            android:layout_margin="4dp"
+            style="@style/Base.TextAppearance.AppCompat.Title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textViewContent"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="false"
+            android:textAlignment="center"
+            android:padding="12dp"
+            android:layout_margin="4dp"
+            style="@style/list.item.normal"
+            android:background="@drawable/white_bg"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_my_choice"
+            android:id="@+id/checkBox"
+            android:layout_alignParentRight="false"
+            android:layout_below="@+id/textViewContent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dp"
+            android:layout_alignRight="@+id/textViewContent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/txtMsg"
+            android:background="@drawable/tcld"
+            android:layout_below="@+id/checkBox"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtMsg"
+        android:padding="4dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/white_bg"
+        >
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/button_yes"
+            android:id="@+id/buttonYes"
+            android:background="@drawable/custom_btn3"
+            android:layout_weight=".33"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/buttonNo"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/button_no"
+            android:id="@+id/buttonNo"
+            android:background="@drawable/custom_btn2"
+            android:layout_weight=".33"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/button_cancel"
+            android:id="@+id/buttonCancel"
+            android:background="@drawable/custom_btn_white"
+            android:layout_weight=".33"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/buttonNo"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+
+    </RelativeLayout>

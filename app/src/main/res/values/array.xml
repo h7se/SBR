@@ -1,0 +1,108 @@
+<resources>
+
+    <string-array name="compressionLevel">
+        <item>Fastest</item>
+        <item>Fast</item>
+        <item>Normal</item>
+        <item>Maximum</item>
+        <item>Ultra</item>
+    </string-array>
+
+    <string-array name="compressionLevelValues" >
+        <item >1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+    </string-array>
+
+
+    <string-array name="encryptionMethod">
+        <item>Standard</item>
+        <item>AES</item>
+    </string-array>
+
+    <string-array name="encryptionMethodValues">
+        <item>0</item>
+        <item>99</item>
+    </string-array>
+
+    <string-array name="compressionMethod">
+        <item>Store</item>
+        <item>Deflate</item>
+    </string-array>
+
+    <string-array name="compressionMethodValues">
+        <item>0</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="encryptionAesStrength">
+        <item>128</item>
+        <item>256</item>
+    </string-array>
+
+    <string-array name="encryptionAesStrengthValues">
+        <item>1</item>
+        <item>3</item>
+    </string-array>
+
+
+    <string-array name="logFontSize">
+        <item>xsmall</item>
+        <item>small</item>
+        <item>normal</item>
+        <item>medium</item>
+        <item>large</item>
+        <item>xlarge</item>
+        <item>xxlarge</item>
+    </string-array>
+
+    <string-array name="logFontSizeValues">
+        <item>5.5</item>
+        <item>7.0</item>
+        <item>8.5</item>
+        <item>10.0</item>
+        <item>13.0</item>
+        <item>18.0</item>
+        <item>25.0</item>
+    </string-array>
+
+    <string-array name="logFileSize">
+        <item>small</item>
+        <item>normal</item>
+        <item>large</item>
+    </string-array>
+
+
+    <string-array name="logFileSizeValues">
+        <item>16</item>
+        <item>64</item>
+        <item>1024</item>
+    </string-array>
+
+    <string-array name="msgDisplayDuration">
+        <item>short</item>
+        <item>normal</item>
+        <item>long</item>
+    </string-array>
+
+
+    <string-array name="msgDisplayDurationValues">
+        <item>1200</item>
+        <item>1600</item>
+        <item>2000</item>
+    </string-array>
+
+
+    <string-array name="progressAnimation">
+        <item>(None)</item>
+        <item>Pluse</item>
+    </string-array>
+
+    <string-array name="progressAnimationValues">
+        <item>-1</item>
+        <item>0</item>
+    </string-array>
+
+</resources>

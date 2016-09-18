@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent_white_45">#45ffffff</color>
+    <color name="transparent_white_35">#35ffffff</color>
+    <color name="transparent_white_25">#25ffffff</color>
+    <color name="transparent_white_17">#17ffffff</color>
+    <color name="transparent_white_15">#15ffffff</color>
+    <color name="transparent_white_12">#12ffffff</color>
+    <color name="transparent_white_10">#10ffffff</color>
+    <color name="transparent_white_7">#07ffffff</color>
+    <color name="transparent_white_5">#05ffffff</color>
+
+    <color name="transparent_black_35">#35000000</color>
+    <color name="transparent_black_25">#25000000</color>
+    <color name="transparent_black_17">#17000000</color>
+    <color name="transparent_black_15">#15000000</color>
+    <color name="transparent_black_10">#10000000</color>
+
+    <color name="orange">#ffff8000</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="red">#ffff0000</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="green">#ff00ff00</color>
+    <color name="yellow">#ffffff00</color>
+
+    <color name="red_dark">#ffC73F17</color>
+    <color name="orange_dark">#ffD2691E</color>
+    <color name="white_dark">#ffcfffff</color>
+    <color name="orange_light">#ffEE9A00</color>
+    <color name="yellow_dark">#ffcfff00</color>
+    <color name="green_dark">#ffAADD00</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_red">#80ff0000</color>
+    <color name="transparent_blue">#800000ff</color>
+    <color name="transparent_green">#8000ff00</color>
+    <color name="transparent_yellow">#80ffff00</color>
+    <color name="transparent_orange">#80ff8800</color>
+
+    <color name="list_selector_1_color_white_0">#10ffffff</color>
+    <color name="list_selector_1_color_white_1">#35ffffff</color>
+
+    <color name="list_selector_1_color_black_0">#10000000</color>
+    <color name="list_selector_1_color_black_1">#15000000</color>
+
+    <color name="transparent_green_item_status">#1200ff00</color>
+    <color name="transparent_yellow_item_status">#12ffff00</color>
+    <color name="transparent_blue_item_status">#120000ff</color>
+    <color name="transparent_red_item_status">#12ff0000</color>
+
+
+    <color name="cream_dark">#000000</color>
+    <color name="cream">#ffffff</color>
+
+    <color name="shadow_dark">#5000</color>
+    <color name="shadow_light">#0000</color>
+    <color name="semi_transparent_black">#80000000</color>
+    <color name="gray">#fffffff7</color>
+
+
+    <color name="list_selector_1_color2">#40000000</color>
+    <color name="list_selector_1_color3">#60000000</color>
+    <color name="list_selector_1_color4">#80000000</color>
+    <color name="list_selector_1_color5">#A0000000</color>
+
+    <color name="list_selector_1_color6">#5000ff00</color>
+    <color name="list_selector_1_color7">#A000ff00</color>
+
+    <color name="transparent_pink">#80ff00ff</color>
+    <color name="transparent_pink_15">#15ff00ff</color>
+    <color name="transparent_green_15">#1500ff00</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

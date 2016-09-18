@@ -1,0 +1,118 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/noisy_texture_t1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.qou.h7se.sbr.SidePanelDrawerFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTitle"
+        android:layout_marginBottom="4dp"
+
+        android:background="@drawable/shadow_ey_3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textViewTitle"
+            android:id="@+id/textViewContainer"
+            android:visibility="gone"
+            >
+            android:layout_below="@+id/textViewTitle"
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/checkBox3">
+
+            <!---->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:enabled="true"
+                android:gravity="top|center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp"
+                style="@style/Base.TextAppearance.AppCompat.Large" />
+            </ScrollView>
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keep closed"
+                android:id="@+id/checkBox3"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/update_activity_bg"
+                />
+        </RelativeLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_above="@+id/linearLayout"
+        android:visibility="gone"
+        android:id="@+id/editTextContainer">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:textAlignment="center"
+            android:enabled="true"
+            android:gravity="top|center_vertical"
+            />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:id="@+id/linearLayout"
+        android:gravity="center_horizontal">
+        <!--android:visibility="gone"-->
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton3"
+            android:src="@drawable/ic_close_white_24dp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton4"
+            android:src="@drawable/ic_select_all_white_24dp"
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

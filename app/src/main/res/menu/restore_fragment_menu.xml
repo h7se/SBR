@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+
+    <item android:id="@+id/action_delete_item" android:title="Delete"
+        app:showAsAction="always" android:icon="@drawable/ic_delete_white_24dp" />
+
+    <item android:id="@+id/action_restore" android:title="Restore"
+        app:showAsAction="always" android:icon="@drawable/ic_cloud_download_white_24dp" />
+
+    <item android:id="@+id/action_menu_check"
+        android:title="select">
+        <menu xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:id="@+id/action_check_all" android:title="Select All"
+                app:showAsAction="withText|ifRoom" android:icon="@drawable/ic_check_box_white_24dp" />
+
+            <item android:id="@+id/action_check_none" android:title="Select None"
+                app:showAsAction="withText|ifRoom" android:icon="@drawable/ic_check_box_outline_blank_white_24dp" />
+        </menu>
+    </item>
+
+    <item android:id="@+id/action_share" android:title="Share"
+        app:showAsAction="ifRoom" android:icon="@drawable/ic_share_white_24dp" />
+
+</menu>

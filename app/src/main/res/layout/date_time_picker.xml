@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView">
+
+
+	
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:id="@+id/horizontalScrollView"
+        android:background="@drawable/update_activity_listview_bg"
+        android:layout_margin="4dp"
+        >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/radioGroup"
+            android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disabled"
+                    android:id="@+id/radioButton"
+                    android:checked="true"
+                    android:layout_marginLeft="4dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Every day"
+                    android:id="@+id/radioButton2"
+                    android:layout_marginLeft="16dp"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Every week"
+                    android:id="@+id/radioButton3"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="4dp" />
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:id="@+id/horizontalScrollView2"
+        android:background="@drawable/update_activity_listview_bg"
+        android:layout_margin="4dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton"
+                android:background="@drawable/toggle_selector"
+                android:textOff="S" android:textOn="S" />
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton2"
+                android:background="@drawable/toggle_selector"
+                android:textOff="S" android:textOn="S" />
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton3"
+                android:background="@drawable/toggle_selector"
+                android:textOff="M" android:textOn="M" />
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton4"
+                android:background="@drawable/toggle_selector"
+                android:textOff="T" android:textOn="T" />
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton5"
+                android:background="@drawable/toggle_selector"
+                android:textOff="W" android:textOn="W" />
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton6"
+                android:background="@drawable/toggle_selector"
+                android:textOff="T" android:textOn="T" />
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton7"
+                android:background="@drawable/toggle_selector"
+                android:textOff="F" android:textOn="F" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/timePicker"
+        android:timePickerMode="spinner"
+        android:background="@drawable/fragment_bg3"
+        android:layout_marginBottom="8dp" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_margin="8dp">
+    </ListView>
+
+
+    <ListView
+        android:id="@+id/list2"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:layout_margin="8dp">
+    </ListView>
+
+</LinearLayout>
+
+</ScrollView>

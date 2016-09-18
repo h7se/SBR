@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_padding_top_bottom"
+    android:paddingBottom="@dimen/activity_padding_top_bottom"
+    android:id="@+id/layoutFragmentRoot"
+    tools:context=".MainActivity$PlaceholderFragment"
+    >
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView"
+        android:dividerHeight="0dp"
+        android:divider="@color/transparent"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false" />
+
+    <ZoomControls
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zoomControls"
+        android:layout_alignEnd="@+id/listView"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp" />
+
+    <!-- android:transcriptMode="alwaysScroll"-->
+</RelativeLayout>

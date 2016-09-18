@@ -1,0 +1,165 @@
+
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:id="@+id/drawer_layout"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:layout_above="@+id/frameLayout">
+
+
+        <android.support.design.widget.CoordinatorLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:fitsSystemWindows="true"
+            tools:context=".MainActivity">
+
+            <!-- As the main content view, the view below consumes the entire
+                 space available using match_parent in both dimensions. -->
+            <FrameLayout android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                />
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <!-- android:layout_gravity="start" tells DrawerLayout to treat
+             this as a sliding drawer on the left side for left-to-right
+             languages and on the right side for right-to-left languages.
+             If you're not building against API 17 or higher, use
+             android:layout_gravity="left" instead. -->
+        <!-- The drawer is given a fixed width in dp and extends the full height of
+             the container. -->
+        <fragment android:id="@+id/navigation_drawer"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start|center"
+            android:name="com.qou.h7se.sbr.NavigationDrawerFragment"
+            tools:layout="@layout/fragment_navigation_drawer"
+            android:tag="fragment_navigation_drawer"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="64dp"
+            />
+
+        <fragment android:id="@+id/side_panel_drawer"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="@dimen/navigation_drawer_width"
+            android:layout_gravity="end|center"
+            android:name="com.qou.h7se.sbr.SidePanelDrawerFragment"
+            tools:layout="@layout/fragment_side_panel_drawer"
+            android:tag="fragment_side_panel"
+            />
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+    <!--android:visibility="gone"-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/relativeLayoutLoading"
+        android:background="@drawable/stylish_activity_bg"
+        android:visibility="gone"
+        android:layout_above="@+id/frameLayout">
+
+        <ProgressBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayoutLoadingProgressBar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="false"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:background="@drawable/shadow_ex1"
+            android:progressDrawable="@drawable/custom_progressbar3"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp" />
+
+        <ProgressBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayoutLoadingProgressBar2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="false"
+            android:layout_below="@+id/relativeLayoutLoadingProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:background="@drawable/shadow_ex1"
+            android:progressDrawable="@drawable/custom_progressbar3"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp" />
+
+        <!--style="@android:style/Widget.Holo.ProgressBar"-->
+
+
+        <TextSwitcher
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textSwitcher2"
+            android:visibility="visible"
+            android:layout_below="@+id/relativeLayoutLoadingProgressBar2"
+            android:layout_alignStart="@+id/relativeLayoutLoadingProgressBar2"
+            android:layout_alignEnd="@+id/relativeLayoutLoadingProgressBar2"
+            android:layout_marginTop="24dp">
+
+        </TextSwitcher>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/frameLayout"
+        android:background="@drawable/fragment_bg2"
+        >
+
+        <TextSwitcher
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textSwitcher"
+            android:visibility="visible">
+
+        </TextSwitcher>
+    </FrameLayout>
+
+</RelativeLayout>
+
+
+<!--&lt;!&ndash; A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. &ndash;&gt;
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/drawer_layout"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    &lt;!&ndash; As the main content view, the view below consumes the entire
+         space available using match_parent in both dimensions. &ndash;&gt;
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    &lt;!&ndash; android:layout_gravity="start" tells DrawerLayout to treat
+         this as a sliding drawer on the left side for left-to-right
+         languages and on the right side for right-to-left languages.
+         If you're not building against API 17 or higher, use
+         android:layout_gravity="left" instead. &ndash;&gt;
+    &lt;!&ndash; The drawer is given a fixed width in dp and extends the full height of
+         the container. &ndash;&gt;
+    <fragment android:id="@+id/navigation_drawer"
+        android:layout_width="@dimen/navigation_drawer_width" android:layout_height="match_parent"
+        android:layout_gravity="start" android:name="com.qou.h7se.sbr.NavigationDrawerFragment"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+</android.support.v4.widget.DrawerLayout>-->
+
+
+
+
+

@@ -1,0 +1,87 @@
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout"
+    tools:context=".MainActivity">
+
+
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment_bg3"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="3dp"
+    android:clickable="false"
+    android:id="@+id/cardView"
+  >
+
+    >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout"
+            android:background="@drawable/fragment_bg">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="@drawable/fragment_bg"
+            android:orientation="horizontal"
+            >
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/textView1"
+                android:text=""
+                android:gravity="center_vertical|center_horizontal"
+                android:alpha="0.85"
+                android:background="@drawable/fragment_bg3"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:textScaleX="0.45"
+                android:layout_marginLeft="2dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:id="@+id/textView2"
+                android:text="from"
+                android:gravity="center_vertical|center_horizontal"
+                android:alpha="0.85"
+                android:background="@drawable/fragment_bg3"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:textScaleX="0.45"
+                android:layout_marginLeft="2dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35"
+                android:id="@+id/textView3"
+                android:text=""
+                android:gravity="center_vertical|center_horizontal"
+                android:alpha="0.85"
+                android:background="@drawable/fragment_bg3"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:textScaleX="0.45"
+                android:layout_marginLeft="2dp" />
+
+        </LinearLayout>
+        </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <PreferenceScreen android:title="User interface"
+        android:summary="Settings related to UI customizations"
+        >
+
+        <PreferenceCategory
+            android:title="Background image"
+            android:key="background_image">
+
+            <SwitchPreference
+                android:key="enable_background_image"
+                android:title="Enabled"
+                android:summary="Use custom background"
+                android:defaultValue="true"
+                />
+
+            <ListPreference
+                android:key="background_image_list"
+                android:title="Image"
+                android:summary="Choose background image from the following list"
+                android:defaultValue="dark.jpg"
+                android:dependency="enable_background_image" />
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:title="Quick message bar"
+            android:key="quick_message_bar">
+
+            <SwitchPreference
+                android:key="message_bar_visible"
+                android:title="Visible"
+                android:summary="Set's the visibility of the message bar"
+                android:defaultValue="true" />
+
+            <ListPreference
+                android:key="msg_display_duration"
+                android:title="Duration"
+                android:summary="Duration in milliseconds to display each message"
+                android:entries="@array/msgDisplayDuration"
+                android:entryValues="@array/msgDisplayDurationValues"
+                android:defaultValue="800"
+                android:dependency="message_bar_visible"
+                />
+        </PreferenceCategory>
+
+
+        <PreferenceCategory
+            android:title="Progress window"
+            android:key="progress_window">
+
+            <ListPreference
+                android:key="progress_window_animation"
+                android:title="Animation type"
+                android:summary="Select the animation to be used in the progress window"
+                android:entries="@array/progressAnimation"
+                android:entryValues="@array/progressAnimationValues"
+                android:defaultValue="0"
+                />
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:title="Logs"
+            android:key="logs">
+
+            <ListPreference
+                android:key="logs_font_size"
+                android:title="Font size"
+                android:summary="Size of font used to display log entries"
+                android:entries="@array/logFontSize"
+                android:entryValues="@array/logFontSizeValues"
+                android:defaultValue="8.5"
+                />
+
+            <ListPreference
+                android:key="max_log_file_size"
+                android:title="File max size"
+                android:summary="Log file max size in kb, high value will cause UI to freeze"
+                android:entries="@array/logFileSize"
+                android:entryValues="@array/logFileSizeValues"
+                android:defaultValue="16" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+
+
+    <PreferenceScreen android:title="Backup"
+        android:summary="Settings related to Backup/Restore process"
+        >
+
+
+        <PreferenceCategory
+            android:title="Locations"
+            android:key="backup_locations_category">
+
+            <EditTextPreference
+                android:key="local_backup_location_value"
+                android:title="Local"
+                android:summary="Local Backup Location"
+                android:dialogTitle="Local Backup Location"
+                android:dialogMessage=""
+                android:defaultValue="" />
+
+            <EditTextPreference
+                android:key="drive_backup_location_value"
+                android:title="Google drive"
+                android:summary="Google drive Backup Location"
+                android:dialogTitle="Google drive Backup Location"
+                android:dialogMessage=""
+                android:defaultValue="" />
+
+            <EditTextPreference
+                android:key="ftp_backup_location_value"
+                android:title="FTP"
+                android:summary="FTP Backup Location"
+                android:dialogTitle="FTP Backup Location"
+                android:dialogMessage="todo: "
+                android:defaultValue="" />
+
+            <EditTextPreference
+                android:key="dropbox_backup_location_value"
+                android:title="Dropbox"
+                android:summary="Dropbox Backup Location"
+                android:dialogTitle="Dropbox Backup Location"
+                android:dialogMessage=""
+                android:defaultValue="" />
+        </PreferenceCategory>
+
+            <com.qou.h7se.sbr.DatePickerPreference
+                android:key="backup_location_schedule"
+                android:title="Schedule"
+                android:summary="Schedule backups"
+                />
+
+
+        <PreferenceCategory
+            android:title="Compression"
+            android:key="compression_category">
+
+            <ListPreference
+                android:key="compression_level"
+                android:title="Level"
+                android:summary="Compression level / High compression level compromises speed"
+                android:entries="@array/compressionLevel"
+                android:entryValues="@array/compressionLevelValues"
+                android:defaultValue="1"
+                />
+
+
+            <ListPreference
+                android:key="compression_method"
+                android:title="Method"
+                android:summary="Method used to compress file(s)"
+                android:entries="@array/compressionMethod"
+                android:entryValues="@array/compressionMethodValues"
+                android:defaultValue="8"
+                />
+        </PreferenceCategory>
+
+
+        <PreferenceCategory
+            android:title="Encryption"
+            android:key="encryption_category">
+
+            <SwitchPreference
+                android:key="compression_encryption_enable_flag"
+                android:title="Encryption"
+                android:defaultValue="false"
+                android:summary="Enable encryption"
+                />
+
+            <EditTextPreference
+                android:key="compression_password"
+                android:title="Password"
+                android:summary="Password used to secure zip file(s)"
+                android:dialogTitle="Compression password"
+                android:dialogMessage="Password used to secure zip file(s)"
+                android:dependency="compression_encryption_enable_flag"
+                android:password="true"
+                />
+
+            <ListPreference
+                android:key="compression_encryption_method"
+                android:title="Method"
+                android:summary="Encryption method used in AES encryption"
+                android:entries="@array/encryptionMethod"
+                android:entryValues="@array/encryptionMethodValues"
+                android:defaultValue="0"
+                android:dependency="compression_encryption_enable_flag"
+                />
+
+            <ListPreference
+                android:key="compression_encryption_aes_strength"
+                android:title="AES strength"
+                android:summary="AES encryption strength"
+                android:entries="@array/encryptionAesStrength"
+                android:entryValues="@array/encryptionAesStrengthValues"
+                android:defaultValue="1"
+                android:dependency="compression_encryption_enable_flag"
+                />
+
+        </PreferenceCategory>
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:title="Cloud"
+        android:summary="Settings related to cloud services">
+        <PreferenceScreen android:title="FTP">
+            <PreferenceCategory
+                android:title="Credentials"
+                android:key="ftp_credentials_category">
+
+                <EditTextPreference
+                    android:key="ftp_server_value"
+                    android:title="Host"
+                    android:summary="The name of the remote host."
+                    android:dialogTitle="Ftp host location"
+                    android:dialogMessage="The name of the remote host."
+                    android:defaultValue="" />
+
+                <EditTextPreference
+                    android:key="ftp_user_value"
+                    android:title="User"
+                    android:summary="The username to login under."
+                    android:dialogTitle="Ftp username"
+                    android:dialogMessage="The username to login under."
+                    android:defaultValue="" />
+
+                <EditTextPreference
+                    android:key="ftp_pass_value"
+                    android:title="Password"
+                    android:password="true"
+                    android:summary="The password to use."
+                    android:dialogTitle="Ftp password"
+                    android:dialogMessage="The password to use."
+                    android:defaultValue="" />
+            </PreferenceCategory>
+
+            <PreferenceCategory
+                android:title="Connection"
+                android:key="ftp_connection_category">
+
+                <com.qou.h7se.sbr.EditTextIntegerPreference
+                    android:key="ftp_connect_timeout"
+                    android:title="Connect timeout"
+                    android:summary="Sets the connection timeout in milliseconds."
+                    android:dialogTitle="Connect timeout"
+                    android:dialogMessage="Sets the connection timeout in milliseconds."
+                    android:defaultValue="7000"
+                    />
+
+
+                <com.qou.h7se.sbr.EditTextIntegerPreference
+                    android:key="ftp_socket_timeout"
+                    android:title="Socket timeout"
+                    android:summary="Set the timeout in milliseconds of a currently open connection."
+                    android:dialogTitle="Socket timeout"
+                    android:dialogMessage="Set the timeout in milliseconds of a currently open connection."
+                    android:defaultValue="30000"
+                    />
+
+                <com.qou.h7se.sbr.EditTextIntegerPreference
+                    android:key="ftp_connection_port"
+                    android:title="Connection port"
+                    android:summary="The port to connect to on the remote host."
+                    android:dialogTitle="Connection port"
+                    android:dialogMessage="The port to connect to on the remote host."
+                    android:defaultValue="21"
+                    />
+            </PreferenceCategory>
+
+            <PreferenceCategory
+                android:title="Misc."
+                android:key="ftp_misc_category">
+
+                <SwitchPreference
+                    android:key="ftp_show_hidden_files"
+                    android:title="Show hidden files"
+                    android:summary="Show hidden files"
+                    android:defaultValue="false" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:title="Google Drive">
+            <Preference android:title="Delete active account info" android:key="delete_google_account_info"></Preference>
+    </PreferenceScreen>
+
+        <PreferenceScreen
+            android:title="Drop Box">
+            <Preference android:title="Delete active account info" android:key="delete_dbox_account_info"></Preference>
+        </PreferenceScreen>
+
+    </PreferenceScreen>
+
+
+
+
+</PreferenceScreen>

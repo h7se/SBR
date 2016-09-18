@@ -1,0 +1,83 @@
+<resources>
+
+    <style name="PreferencesTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/stylish_activity_bg</item>
+    </style>
+
+    <!-- TODO: FIX THIS/ DOSN'T WORK // style for the tabs -->
+    <style name="Styles" />
+    <style name="Styles.ActionBar" />
+    <style name="Styles.ActionBar.TabStyleText" parent="android:Widget.Holo.ActionBar.TabText">
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+
+    <style name="Styles.ActionBar.StyleEx" parent="android:Widget.Holo.ActionBar">
+       <item name="android:background">@drawable/fragment_bg2</item>
+        <item name="background" >@drawable/fragment_bg2</item>
+
+        <!--<item name="android:scaleY">0.96</item>-->
+
+        <item name="android:textScaleX">0.56</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--fab back color  @color/colorAccent-->
+        <item name="colorAccent">@color/black</item>
+
+        <item name="actionBarStyle">@style/Styles.ActionBar.StyleEx</item>
+        <item name="android:actionBarStyle">@style/Styles.ActionBar.StyleEx</item>
+
+        <item name="android:actionBarTabTextStyle">@style/Styles.ActionBar.TabStyleText</item>
+        <!--<item name="android:actionBarSize">40dp</item>-->
+        <item name="actionBarTabTextStyle">@style/Styles.ActionBar.TabStyleText</item>
+        <!--<item name="actionBarSize">40dp</item>-->
+        <!--<item name="android:actionBarStyle">@style/ActionBarStyleEx</item>-->
+        <!--<item name="actionBarStyle">@style/ActionBarStyleEx</item>-->
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="Animations" />
+    <style name="Animations.Dialog">
+        <!--<item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>-->
+        <item name="@android:windowExitAnimation">@anim/vanish</item>
+    </style>
+
+
+    <style name="list.item.normal" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="list.item.title" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">#ff0ab7ff</item>
+    </style>
+
+    <style name="qou.list.item.xsmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="qou.list.item.xxsmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">#8affff00</item>
+    </style>
+
+
+
+</resources>
+

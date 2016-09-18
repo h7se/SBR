@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_padding_top_bottom"
+    android:paddingBottom="@dimen/activity_padding_top_bottom"
+    android:id="@+id/layoutFragmentRoot"
+    tools:context=".MainActivity$PlaceholderFragment"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_weight="0.85">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:id="@+id/linearLayout22">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_weight="0.05">
+                    </RelativeLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.40"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+                        <RelativeLayout
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_gravity="left|center_vertical"
+                            android:background="@drawable/circle"
+                            >
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:id="@+id/imageView7"
+                                android:src="@drawable/ftp_96"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle"
+                            >
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:id="@+id/imageView9"
+                                android:src="@drawable/google_drive_96"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:background="@drawable/circle"
+                            >
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:id="@+id/imageView10"
+                                android:src="@drawable/dropbox_96"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_weight="0">
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.20"
+                        android:layout_marginBottom="2dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/rv2"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/shadow_ex2" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_weight="0.05">
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.30">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/rv3"
+                            android:background="@drawable/shadow_ex4"
+                            android:layout_marginBottom="4dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_weight="0.05">
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:id="@+id/relativeLayout_sdcard"
+
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fragment_bg2"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentBottom="true"
+                    android:baselineAligned="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentLeft="true">
+
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/progressBar1"
+                        android:background="@drawable/shadow_ex1"
+                        android:progressDrawable="@drawable/custom_progressbar2"
+                        android:layout_margin="4dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <!--android:visibility="gone"-->
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

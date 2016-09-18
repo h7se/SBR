@@ -1,0 +1,12 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f000000"
+    android:choiceMode="singleChoice"
+    android:divider="@color/transparent_white_10"
+    android:dividerHeight="0dp"
+    tools:context=".NavigationDrawerFragment"
+    />
+    <!--android:background="?attr/selectableItemBackgroundBorderless"-->
